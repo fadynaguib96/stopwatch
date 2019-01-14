@@ -1,0 +1,431 @@
+body{
+    text-align:center;
+  }
+
+  #watch1, #watch2, #watch3, #watch4 {
+    font-family:"Lato";
+    font-size:5em;
+    font-weight:100;
+  }
+
+  button{
+    display:inline-block;
+    width:100px;
+    height:35px;
+    background:none;
+    border-radius:10px;
+    box-shadow:none;
+    border: 1px solid #ccc;
+    margin-bottom:15px;
+  }
+
+  .mainBtn{
+    display:inline-block;
+    width:200px;
+    height:35px;
+    font-size:18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background:none;
+    border-radius:10px;
+    box-shadow:none;
+    border: 1px solid #ccc;
+    margin-bottom:15px;
+  }
+
+  .mainBtn:hover{
+    cursor:pointer;
+    background: white;
+  }
+
+  button:hover{
+    cursor:pointer;
+    background: lightgray;
+  }
+
+
+/* jumbotron */
+
+.jumbotron { 
+  position: relative;
+  padding: 130px; 
+  background-image: url("assets/1.png");
+  background-size: cover
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;  
+  padding: 0 15px; 
+}
+
+.jumbotron .container { 
+  max-width: 100%; 
+ 
+}
+
+.jumbotron h1 { 
+  padding:25px;
+  text-align: center; 
+  color: #DDD;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.jumbotron h2 { 
+  padding:25px;
+  text-align: center; 
+  color: black;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content {
+  z-index:1;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+.content p {
+  margin: 0 0 20px;
+}
+
+/* Box/Stopwatch */
+
+
+#box {
+  display:none;
+  width: 100%x; 
+  height:250px;
+  margin: 0 auto;  
+  padding: 0 15px 50px 15px; 
+  position: relative;
+  background-color: burlywood;
+}
+
+.newBox{
+  display:none;
+  width: 100%x; 
+  height:500px;
+  margin: 0 auto;  
+  padding: 0 15px 50px 15px; 
+  position: relative;
+  background-color: burlywood;
+}
+
+#stopwatch1 { 
+  display:none;
+  float:left;
+  padding: 30px; /* fills out the jumbotron */
+  background-color: lightsalmon;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+#stopwatch2{
+  display:none;
+  float:left;
+  padding: 30px; /* fills out the jumbotron */
+  background-color:lightblue;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+}
+
+
+#stopwatch3{
+  display:none;
+  float:left;
+  padding: 30px; /* fills out the jumbotron */
+  background-color: lightgreen;
+  position: absolute;
+  left: 10%;
+  top: 55%;
+}
+
+#stopwatch4{
+  display:none;
+  float:left;
+  padding: 30px; /* fills out the jumbotron */
+  background-color: lightseagreen;
+  position: absolute;
+  left: 60%;
+  top: 55%;
+}
+
+
+.jumbotron .container { 
+  max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+  background-color: #222;
+}
+
+@media screen and (max-width:1200px) {
+
+  #stopwatch1 { 
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightsalmon;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+  
+  #stopwatch2{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color:lightblue;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+  }
+  
+  
+  #stopwatch3{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightgreen;
+    position: absolute;
+    left: 5%;
+    top: 55%;
+  }
+  
+  #stopwatch4{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightseagreen;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+
+  #box {
+    display:none;
+    width: 100%x; 
+    height:1000px;
+    margin: 0 auto;  
+    padding: 0 15px 50px 15px; 
+    position: relative;
+    background-color: burlywood;
+  }
+
+  .newBox{
+    width: 100%x; 
+    height:1000px;
+    margin: 0 auto;  
+    padding: 0 15px 50px 15px; 
+    position: relative;
+    background-color: burlywood;
+  }
+
+  
+  #stopwatch1 { 
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightsalmon;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+  }
+  
+  #stopwatch2{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color:lightblue;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+  }
+  
+  
+  #stopwatch3{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightgreen;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+  }
+  
+  #stopwatch4{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightseagreen;
+    position: absolute;
+    left: 25%;
+    top: 80%;
+  }
+
+  
+
+}
+
+@media screen and (max-width:780px) {
+
+    
+  #stopwatch1 { 
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightsalmon;
+    position: absolute;
+    left: 18%;
+    top: 5%;
+  }
+  
+  #stopwatch2{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color:lightblue;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+  }
+  
+  
+  #stopwatch3{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightgreen;
+    position: absolute;
+    left: 18%;
+    top: 55%;
+  }
+  
+  #stopwatch4{
+    display:none;
+    float:left;
+    padding: 30px; /* fills out the jumbotron */
+    background-color: lightseagreen;
+    position: absolute;
+    left: 18%;
+    top: 80%;
+  }
+
+
+
+}
+
+@media screen and (max-width:640px){
+
+  .jumbotron { 
+    position: relative;
+    padding: 70px; 
+    background-image: url("assets/1.png");
+    background-size: cover
+  }
+  
+
+  #watch1, #watch2, #watch3, #watch4 {
+    font-family:"Lato";
+    font-size:3em;
+    font-weight:100;
+  }
+
+
+  #stopwatch1 { 
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightsalmon;
+    position: absolute;
+    left: 16%;
+    top: 5%;
+  }
+  
+  #stopwatch2{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color:lightblue;
+    position: absolute;
+    left: 16%;
+    top: 30%;
+  }
+  
+  
+  #stopwatch3{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightgreen;
+    position: absolute;
+    left: 16%;
+    top: 55%;
+  }
+  
+  #stopwatch4{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightseagreen;
+    position: absolute;
+    left: 16%;
+    top: 80%;
+  }
+}
+
+@media screen and (max-width:480px){
+  #stopwatch1 { 
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightsalmon;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
+  
+  #stopwatch2{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color:lightblue;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+  }
+  
+  
+  #stopwatch3{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightgreen;
+    position: absolute;
+    left: 5%;
+    top: 55%;
+  }
+  
+  #stopwatch4{
+    display:none;
+    float:left;
+    padding: 15px; /* fills out the jumbotron */
+    background-color: lightseagreen;
+    position: absolute;
+    left: 5%;
+    top: 80%;
+  }
+}
+
+
+
+
